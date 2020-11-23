@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  background-color: rgb(52, 38, 116);
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/* /I want clicked to be a new color */
+/* I want a hover effect on every number */
+
+.outerContainer {
+  width: 400px;
+  height: 500px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 8px;
+  border: white solid 2px;
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.numberButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-end: -1;
+    height: 100%;
+}
+
+button {
+  border-radius: 2px;
+  text-align: center;
+  height: 60%;
+}
+
+.operatorButtons {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 25%;
+}
+
+#zero {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+  background-color: rgb(147, 202, 204, 0.5);
+}
+
+h4 {
+  color: #f4f4f4;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  text-align: start;
+  letter-spacing: 4.8px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+
+#screen {
+  background-color: white;
+  border: rgb(49, 49, 49) solid 2px;
+}

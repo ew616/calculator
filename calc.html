@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="calc.css" />
+  </head>
+
+  <body>
+    <div>
+      <div class="outerContainer">
+        <h4>CALCULATOR</h4>
+
+        <p id="screen">0</p>
+
+
+        <div class='innerContainer'>
+        <div class="numberButtons">
+          <button
+            id="one"
+            onclick="storeVar(this)"
+            value="1"
+          >
+            1
+          </button>
+          <button id="two" onclick="storeVar(this)" value="2">2</button>
+          <button id="three" onclick="storeVar(this)" value="3">3</button>
+          <button id="four" onclick="storeVar(this)" value="4">4</button>
+          <button id="five" onclick="storeVar(this)" value="5">5</button>
+          <button id="six" onclick="storeVar(this)" value="6">6</button>
+          <button id="seven" onclick="storeVar(this)" value="7">7</button>
+          <button id="eight" onclick="storeVar(this)" value="8">8</button>
+          <button id="nine" onclick="storeVar(this)" value="9">9</button>
+          <button id="zero" onclick="storeVar(this)" value="0">0</button>
+        </div>
+
+        <!-- Maybe remove these classes and put it on the div? Could help format it in a grid. -->
+        <button id="plus" class="operatorButtons">+</button>
+        <button id="minus" class="operatorButtons">-</button>
+        <button id="times" class="operatorButtons">x</button>
+        <button id="divide" class="operatorButtons">/</button>
+        <button id="equals" class="">=</button>
+        <button
+          id="clearButton"
+          class="operatorButtons"
+          onclick="storeVar(this)"
+          value="0"
+        >
+          C
+        </button>
+      </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="calc.js" type="text/javascript"></script>
+</html>
